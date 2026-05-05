@@ -1,5 +1,5 @@
 [project]
-name = "mcp-squatguard-template"
+name = "mcp-server-hub"
 dynamic = ["version"]
 description = "SquatGuard MCP Template for Python"
 readme = "README.md"
@@ -14,23 +14,23 @@ dev = [
 ]
 
 [project.scripts]
-mcp-squatguard-template = "mcp_squatguard_template.server:main"
+mcp-server-hub = "mcp_server_hub.server:main"
 
 [project.urls]
-Homepage = "https://github.com/squatguard/mcp-squatguard-template"
-Documentation = "https://github.com/squatguard/mcp-squatguard-template/blob/main/README.md"
-Repository = "https://github.com/squatguard/mcp-squatguard-template"
-Issues = "https://github.com/squatguard/mcp-squatguard-template/issues"
+Homepage = "https://github.com/squatguard/mcp-server-hub"
+Documentation = "https://github.com/squatguard/mcp-server-hub/blob/main/README.md"
+Repository = "https://github.com/squatguard/mcp-server-hub"
+Issues = "https://github.com/squatguard/mcp-server-hub/issues"
 
 [tool.hatch.version]
-path = "src_py/mcp_squatguard_template/__init__.py"
+path = "src_py/mcp_server_hub/__init__.py"
 
 [build-system]
 requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src_py/mcp_squatguard_template"]
+packages = ["src_py/mcp_server_hub"]
 
 [tool.ruff]
 line-length = 120
